@@ -19,7 +19,7 @@ public class LocalTestExecution {
 	{
 	//Step 1 set up the URL for the Selenium Grid
 		
-	String url = "http://192.0.0.2:4444/wd/hub";
+	String url = "http://192.168.1.236:4444/wd/hub";
 				
 	//Step 2 is to set up the chrome options for launching Chrome browser
 				
