@@ -15,11 +15,11 @@ public class LocalTestExecution {
 	
 	@Test
 	
-	public void LaunchBrowser() throws MalformedURLException
+	public void OpenChromeBrowser() throws MalformedURLException, InterruptedException
 	{
 	//Step 1 set up the URL for the Selenium Grid
 		
-	String url = "http://192.168.1.236:4444/wd/hub";
+	String url = "http://54.209.57.94:4444/wd/hub";
 				
 	//Step 2 is to set up the chrome options for launching Chrome browser
 				
@@ -40,12 +40,16 @@ public class LocalTestExecution {
 	driver.get("https://www.amazon.in/");
 	
 	driver.manage().window().maximize();
-	
+
+	Thread.sleep(10000);
+		
 	String URL = driver.getCurrentUrl();
 	String title = driver.getTitle();
 	
 	System.out.println(URL);
 	System.out.println(title);
+
+	Thread.sleep(10000);
 	
 	driver.quit();
 	
